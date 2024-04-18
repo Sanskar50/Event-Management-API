@@ -9,7 +9,7 @@ const collectionName = 'events'; // Collection name
 const events = [];
 
 
-fs.createReadStream(path.join(__dirname, 'dummy- dataset.csv'))
+fs.createReadStream(path.join(__dirname, 'dummy-dataset.csv'))
     .pipe(csv())
     .on('data', async (row) => {
         try {
